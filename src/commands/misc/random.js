@@ -12,9 +12,6 @@ module.exports = {
         let min = 0;
         let max = args.length;
         let index = parseInt(Math.random() * (max - min) + min);
-        let embed = new Discord.MessageEmbed()
-        .setColor(`RANDOM`)
-        .setTitle(`저의선택은 ${args[index]} 이에요!`);
-        message.channel.send({embed:embed})
+ message.channel.send(`저의선택은 ${args[index]} 이에요!`)
     }
 }
